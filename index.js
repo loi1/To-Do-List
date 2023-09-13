@@ -17,12 +17,21 @@ let inputListener = document.querySelector('#input1').addEventListener(
   'input',
   (eventObject) => inputthing = eventObject.target.value
 )
+
 btn1.addEventListener('click', function addInput(){
   // Add an event handler to populate an HTML element with your to-do list when the user clicks the appropriate button.
   list.innerHTML += "<input type = 'checkbox' class = 'strikethrough'></input><label for ='strikethrough'>"+inputthing+"</label><br>";
 });
+
 btn2.addEventListener('click', function remove_(){
-  
+  console.log(list.children)
+  for (let i = 0; i < list.children.length; i++){
+    if (list.children[i].checked == true){
+      list.removeChild(list.children[i]);
+      list.removeChild(list.children[i]);
+      list.removeChild(list.children[i]);
+    }
+  }
 })
 
 // Etc... break down the big problems into baby steps and solve them systematically. Test as you go.
