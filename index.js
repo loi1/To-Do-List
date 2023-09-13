@@ -25,11 +25,11 @@ btn1.addEventListener('click', function addInput(){
 
 btn2.addEventListener('click', function remove_(){
   console.log(list.children)
-  for (let i = 0; i < list.children.length; i++){
-    if (list.children[i].checked == true){
-      list.removeChild(list.children[i]);
-      list.removeChild(list.children[i]);
-      list.removeChild(list.children[i]);
+    for (let i = list.children.length - 1; i >= 0; i--){
+      if (list.children[i].checked == true){
+        list.removeChild(list.children[i]);
+        list.removeChild(list.children[i]);
+        list.removeChild(list.children[i]);
     }
   }
 })
