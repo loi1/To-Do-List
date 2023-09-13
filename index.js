@@ -13,17 +13,20 @@ const addInput = (input) => {
   todo.innerHTML += input;
 }
 
-let input1 = document.querySelector('#input1').addEventListener(
-  'input',
-  (eventObject) => console.log(eventObject.target.value)
-);
-// addInput(input1);
-
 // Add an event handler to populate an HTML element with your to-do list when the user clicks the appropriate button.
 const btn = document.getElementById('btn1');
 const list = document.getElementById("list1");
+let inputthing = '';
+
 btn.addEventListener('click', function master(){
-  list.innerHTML += '<li>${input1}</li>';
+  let input1 = document.querySelector('#input1').addEventListener(
+    'input',
+    (eventObject) => {
+      inputthing = eventObject.target.value;
+      // console.log(eventObject.target.value)
+    }
+  );
+  list.innerHTML += "<input type = 'checkbox'>"+inputthing+"</input><br>";
 });
 
 // Etc... break down the big problems into baby steps and solve them systematically. Test as you go.
