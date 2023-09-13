@@ -8,11 +8,11 @@ body {
   height:auto;
   background-color:black;
   border:2px solid;
-  border-color:rgb(61, 228, 61);
+  border-color:chartreuse;
 }
   h1 {
     font: 1.5rem "arial";
-    color:rgb(61, 228, 61);
+    color:chartreuse;
 }
 input:checked + label {text-decoration-line: line-through;}
 
@@ -25,5 +25,19 @@ ul {
   margin-inline-end: 0px;
   padding-inline-start: 0px;
   font: 1rem "arial";
-  color:rgb(61, 228, 61);
+  color:chartreuse;
+}
+
+#btn1 {
+  border-radius: 10px;
+  background: chartreuse;
+  width: 57px;
+  height: 35px;
+}
+#btn2 {
+    border-radius: 10px;
+    background: chartreuse;
+    padding: 1px;
+    width: 57px;
+    height: 35px;
 }
