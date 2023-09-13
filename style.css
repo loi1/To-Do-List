@@ -1,4 +1,29 @@
-h1 {
-  color: purple;
+
+html{background-color: black;
+  
+}
+
+body {
+  width:auto;
+  height:auto;
+  background-color:black;
+  border:2px solid;
+  border-color:rgb(61, 228, 61);
+}
+  h1 {
+    font: 1.5rem "arial";
+    color:rgb(61, 228, 61);
 }
 input:checked + label {text-decoration-line: line-through;}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  font: 1rem "arial";
+  color:rgb(61, 228, 61);
+}
